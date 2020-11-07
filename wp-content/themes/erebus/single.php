@@ -1,7 +1,7 @@
 <?php
 
-use {{ SITE_NAMESPACE }}\Kernel;
-use {{ SITE_NAMESPACE }}\Wordpress\SingleController;
+use ThinkingJuice\Kernel;
+use ThinkingJuice\Wordpress\SingleController;
 use Timber\Timber;
 
 $action = Kernel::getAction(get_post_type());

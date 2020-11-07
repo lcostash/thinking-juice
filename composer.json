@@ -17,7 +17,11 @@
   "autoload": {
     "psr-4": {
       "Mimir\\": "scripts/composer/",
-      "Timber\\": "vendor/timber/timber/lib/"
+      "Timber\\": "vendor/timber/timber/lib/",
+      "ThinkingJuice\\": [
+        "wp-content/themes/erebus/classes",
+        "wp-content/themes/erebus/controllers"
+      ]
     }
   },
   "require": {

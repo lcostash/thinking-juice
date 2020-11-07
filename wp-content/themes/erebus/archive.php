@@ -1,7 +1,7 @@
 <?php
 
-use {{ SITE_NAMESPACE }}\Kernel;
-use {{ SITE_NAMESPACE }}\Wordpress\ArchiveController;
+use ThinkingJuice\Kernel;
+use ThinkingJuice\Wordpress\ArchiveController;
 use Timber\Timber;
 
 $postType = get_post_type();

@@ -1,6 +1,6 @@
 <?php
 
-namespace {{ SITE_NAMESPACE }};
+namespace ThinkingJuice;
 
 use NanoSoup\Zeus\Kernel as KernelBase;
 

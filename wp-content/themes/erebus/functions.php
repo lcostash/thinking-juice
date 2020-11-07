@@ -1,5 +1,5 @@
 <?php
 
-use {{ SITE_NAMESPACE }}\Kernel;
+use ThinkingJuice\Kernel;
 
 $kernel = new Kernel();

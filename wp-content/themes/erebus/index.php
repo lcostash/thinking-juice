@@ -1,7 +1,7 @@
 <?php
 
 use Timber\Timber;
-use {{ SITE_NAMESPACE }}\IndexController;
+use ThinkingJuice\IndexController;
 
 $page = IndexController::indexAction();
 

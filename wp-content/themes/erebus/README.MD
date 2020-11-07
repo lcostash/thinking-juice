@@ -14,14 +14,14 @@ Change this:
 namespace NanoSoup\Erebus\ACF\Blocks;
 
 To this:
-namespace {{ SITE_NAMESPACE }}\ACF\Blocks;
+namespace ThinkingJuice\ACF\Blocks;
 ```
 2. Add the following code to your functions.php file:
 ```
-$fieldGroups = new \{{ SITE_NAMESPACE }}\ACF\FieldGroups\Testimonials();
+$fieldGroups = new \ThinkingJuice\ACF\FieldGroups\Testimonials();
 $fieldGroups->init();
 
-$testimonials = new \{{ SITE_NAMESPACE }}\ACF\Blocks\Testimonials();
+$testimonials = new \ThinkingJuice\ACF\Blocks\Testimonials();
 $testimonials->init();
 ```
 You will then be able to select and use the Testimonials block within the Gutenberg editor

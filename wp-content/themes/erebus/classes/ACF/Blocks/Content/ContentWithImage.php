@@ -1,6 +1,6 @@
 <?php
 
-namespace {{ SITE_NAMESPACE }}\ACF\Blocks\Content;
+namespace ThinkingJuice\ACF\Blocks\Content;
 
 use NanoSoup\Nemesis\ACF\BaseFields;
 use NanoSoup\Nemesis\ACF\Blocks\Block;
@@ -9,7 +9,7 @@ use Timber\Timber;
 
 /**
  * Class ContentWithImage
- * @package {{ SITE_NAMESPACE }}\ACF\Blocks
+ * @package ThinkingJuice\ACF\Blocks
  */
 class ContentWithImage extends Block implements BlockInterface
 {
