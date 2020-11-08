@@ -1,5 +1,7 @@
 <?php
 
+namespace ThinkingJuice\Wordpress;
+
 /**
  * Class PageController
  *

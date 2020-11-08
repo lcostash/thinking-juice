@@ -1,5 +1,7 @@
 <?php
 
+namespace ThinkingJuice;
+
 use Timber\Timber;
 
 /**
