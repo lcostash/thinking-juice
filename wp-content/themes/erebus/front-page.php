@@ -3,10 +3,12 @@
 use Timber\Timber;
 use Timber\Post;
 
-while (have_posts()) : the_post();
-    $context = Timber::get_context();
-    $post = new Post();
-    $context['post'] = $post;
+$context = Timber::get_context();
+$context['posts'] = [];
 
-    Timber::render(['views/front-page.twig'], $context);
+while (have_posts()) : the_post();
+    $post = new Post();
+    $context['posts'][] = $post;
 endwhile; // End of the loop.
+
+Timber::render(['views/front-page.twig'], $context);
