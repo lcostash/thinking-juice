@@ -1,0 +1,20 @@
+@media only screen and (max-width: $large-desktop-breakpoint) {
+  .site-footer {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+
+    &__block {
+      display: grid;
+
+      .block__logo {
+        margin: 0 auto;
+      }
+
+      .block__text {
+        margin: 0 auto;
+        max-width: 300px;
+        text-align: center;
+      }
+    }
+  }
+}

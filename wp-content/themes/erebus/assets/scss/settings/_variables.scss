@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 // Global
-$body-font-stack: 'Lato', sans-serif;
+$body-font-stack: 'Poppins', sans-serif;
 $section-margin: 4rem;
 $section-margin-mobile: 2rem;
 
@@ -11,16 +12,20 @@ $default-delay-timing: .2s;
 
 // Colours
 $black: #000;
+$gray: #888;
+$dark: #070B1F;
+$blue: #07C9D3;
+$purple: #3607D380;
 $white: #fff;
 
 // Breakpoint sizes
 $mobile-breakpoint: 730px;
 $tablet-breakpoint: 1025px;
 $phablet-breakpoint-lower: ($mobile-breakpoint + 1);
-$phablet-breakpoint: 729;
+$phablet-breakpoint: 729px;
 $tablet-breakpoint-lower: ($mobile-breakpoint + 1);
 $desktop-breakpoint: ($tablet-breakpoint + 1);
-$large-desktop-breakpoint: 1100;
+$large-desktop-breakpoint: 1100px;
 
 $min-width: 320px;
 $max-width: 1440px;

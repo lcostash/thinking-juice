@@ -32,3 +32,6 @@ $image-path: './images' !default;
         'components/user-content';
 
 @import 'tools/mediaqueries/utilities-mediaqueries';
+@import 'components/mediaqueries/user-content-mediaqueries';
+@import 'components/mediaqueries/site-header-mediaqueries';
+@import 'components/mediaqueries/site-footer-mediaqueries';

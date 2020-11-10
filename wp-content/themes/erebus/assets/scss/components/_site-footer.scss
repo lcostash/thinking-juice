@@ -1,3 +1,29 @@
 .site-footer {
+  align-items: center;
+  display: grid;
+  font: normal normal normal 16px/30px $body-font-stack;
+  grid-auto-rows: minmax(200px, auto);
+  grid-template-columns: repeat(4, 1fr);
+  height: 400px;
+  justify-content: stretch;
+  letter-spacing: 0.48px;
 
+  &__block {
+    .block__text {
+      p {
+        font: normal normal normal 16px/30px $body-font-stack;
+        letter-spacing: 0.48px;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+
+      &.text-small {
+        font: normal normal 600 9px/30px $body-font-stack;
+        letter-spacing: 0.9px;
+      }
+    }
+  }
 }

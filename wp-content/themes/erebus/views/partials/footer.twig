@@ -1,3 +1,57 @@
-<footer>
-    footer
+<footer class="site-footer">
+    <div class="site-footer__block">
+        {% include 'views/partials/components/image-attached.twig' with {
+            'alt': 'Main logo',
+            'class': 'block__logo',
+            'image': function('get_template_directory_uri') ~ '/assets/images/JellyfishEffectColour.png'
+        } %}
+    </div>
+    <div class="site-footer__block">
+        <div class="block__text">
+            <p class="text-muted">Jellyfish Pictures Ltd. 66-68 Margaret Street, London, W1W 8SR</p>
+            <p><a href="javascript:void(0)" target="_self">Get directions</a></p>
+        </div>
+    </div>
+    <div class="site-footer__block">
+        <div class="block__text">
+            <p><strong>Contact us</strong></p>
+            <p class="text-muted">+44 (0) 20 7580 8154</p>
+            <p><a href="mailto:newbusiness@jellyfishpictures.co.uk">newbusiness@jellyfishpictures.co.uk</a></p>
+            <p><a href="mailto:recruitment@jellyfishpictures.co.uk">recruitment@jellyfishpictures.co.uk</a></p>
+        </div>
+    </div>
+    <div class="site-footer__block">
+        <ul class="block__list">
+            <li class="list__item">
+                <a href="javascript:void(0)" target="_blank">
+                    {% include 'views/partials/components/image-attached.twig' with {
+                        'alt': 'Vimeo logo',
+                        'class': 'social__logo',
+                        'image': function('get_template_directory_uri') ~ '/assets/images/Path219-1.svg'
+                    } %}
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="javascript:void(0)" target="_blank">
+                    {% include 'views/partials/components/image-attached.twig' with {
+                        'alt': 'Facebook logo',
+                        'class': 'social__logo',
+                        'image': function('get_template_directory_uri') ~ '/assets/images/Facebook.svg'
+                    } %}
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="javascript:void(0)" target="_blank">
+                    {% include 'views/partials/components/image-attached.twig' with {
+                        'alt': 'Twitter logo',
+                        'class': 'social__logo',
+                        'image': function('get_template_directory_uri') ~ '/assets/images/Twitter.svg'
+                    } %}
+                </a>
+            </li>
+        </ul>
+        <div class="block__text text-small text-ceter">
+            <a href="index.php/privacy-policy" target="_self">PRIVACY POLICY</a> | <span>COPYRIGHT 2020 JELLYFISH PICTURES</span>
+        </div>
+    </div>
 </footer>

@@ -1,3 +1,55 @@
 .site-header {
+  align-content: center;
+  align-items: center;
+  color: $white;
+  display: grid;
+  grid-auto-rows: min-content;
+  height: 1000px;
+  justify-content: center;
+  position: relative;
 
+  &__logo {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    font: normal normal bold 30px/40px $body-font-stack;
+    letter-spacing: 4.5px;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .menu__bar {
+    background-color: $white;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+    width: 35px;
+  }
+
+  &__menu {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+
+    &--change {
+      .menu__bar:first-child {
+        -webkit-transform: rotate(-45deg) translate(-8px, 7px);
+        transform: rotate(-45deg) translate(-8px, 7px);
+      }
+
+      .menu__bar:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu__bar:last-child {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+    }
+  }
 }

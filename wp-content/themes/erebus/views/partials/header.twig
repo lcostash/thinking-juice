@@ -1,3 +1,17 @@
-<header>
-    header
+<header class="site-header">
+    {% include 'views/partials/components/background-attached-image.twig' with {
+        'class': 'site-header',
+        'image': function('get_template_directory_uri') ~ '/assets/images/Showreel1.png'
+    } %}
+    {% include 'views/partials/components/image-attached.twig' with {
+        'alt': 'Main logo',
+        'class': 'site-header__logo',
+        'image': function('get_template_directory_uri') ~ '/assets/images/Group36.svg'
+    } %}
+    <h1 class="site-header__title">WE ARE AN AWARD WINNING ANIMATION & VFX STUDIO</h1>
+    <div class="site-header__menu">
+        <div class="menu__bar"></div>
+        <div class="menu__bar"></div>
+        <div class="menu__bar"></div>
+    </div>
 </header>
