@@ -1,0 +1,29 @@
+<ul class="block__list">
+    <li class="list__item">
+        <a href="javascript:void(0)" target="_blank">
+            {% include 'views/partials/components/image-attached.twig' with {
+                'alt': 'Vimeo logo',
+                'class': 'social__logo',
+                'image': function('get_template_directory_uri') ~ '/assets/images/' ~ (dark == 1 ? 'Path219-1.svg' : 'Path219.svg')
+            } %}
+        </a>
+    </li>
+    <li class="list__item">
+        <a href="javascript:void(0)" target="_blank">
+            {% include 'views/partials/components/image-attached.twig' with {
+                'alt': 'Facebook logo',
+                'class': 'social__logo',
+                'image': function('get_template_directory_uri') ~ '/assets/images/' ~ (dark == 1 ? 'Facebook.svg' : 'f.svg')
+            } %}
+        </a>
+    </li>
+    <li class="list__item">
+        <a href="javascript:void(0)" target="_blank">
+            {% include 'views/partials/components/image-attached.twig' with {
+                'alt': 'Twitter logo',
+                'class': 'social__logo',
+                'image': function('get_template_directory_uri') ~ '/assets/images/' ~ (dark == 1 ? 'Twitter.svg' : 'Path218.svg')
+            } %}
+        </a>
+    </li>
+</ul>

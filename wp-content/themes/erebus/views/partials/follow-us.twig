@@ -3,34 +3,8 @@
         'class': 'follow-us',
         'image': function('get_template_directory_uri') ~ '/assets/images/blue-blur-color-932638.png'
     } %}
+
     <h1 class="follow-us__title">FOLLOW US</h1>
-    <ul class="block__list">
-        <li class="list__item">
-            <a href="javascript:void(0)" target="_blank">
-                {% include 'views/partials/components/image-attached.twig' with {
-                    'alt': 'Vimeo logo',
-                    'class': 'social__logo',
-                    'image': function('get_template_directory_uri') ~ '/assets/images/Path219.svg'
-                } %}
-            </a>
-        </li>
-        <li class="list__item">
-            <a href="javascript:void(0)" target="_blank">
-                {% include 'views/partials/components/image-attached.twig' with {
-                    'alt': 'Facebook logo',
-                    'class': 'social__logo',
-                    'image': function('get_template_directory_uri') ~ '/assets/images/f.svg'
-                } %}
-            </a>
-        </li>
-        <li class="list__item">
-            <a href="javascript:void(0)" target="_blank">
-                {% include 'views/partials/components/image-attached.twig' with {
-                    'alt': 'Twitter logo',
-                    'class': 'social__logo',
-                    'image': function('get_template_directory_uri') ~ '/assets/images/Path218.svg'
-                } %}
-            </a>
-        </li>
-    </ul>
+
+    {% include 'views/partials/social-links.twig' with {'dark': 0} %}
 </section>

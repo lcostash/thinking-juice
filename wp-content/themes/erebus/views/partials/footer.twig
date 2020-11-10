@@ -21,35 +21,7 @@
         </div>
     </div>
     <div class="site-footer__block">
-        <ul class="block__list">
-            <li class="list__item">
-                <a href="javascript:void(0)" target="_blank">
-                    {% include 'views/partials/components/image-attached.twig' with {
-                        'alt': 'Vimeo logo',
-                        'class': 'social__logo',
-                        'image': function('get_template_directory_uri') ~ '/assets/images/Path219-1.svg'
-                    } %}
-                </a>
-            </li>
-            <li class="list__item">
-                <a href="javascript:void(0)" target="_blank">
-                    {% include 'views/partials/components/image-attached.twig' with {
-                        'alt': 'Facebook logo',
-                        'class': 'social__logo',
-                        'image': function('get_template_directory_uri') ~ '/assets/images/Facebook.svg'
-                    } %}
-                </a>
-            </li>
-            <li class="list__item">
-                <a href="javascript:void(0)" target="_blank">
-                    {% include 'views/partials/components/image-attached.twig' with {
-                        'alt': 'Twitter logo',
-                        'class': 'social__logo',
-                        'image': function('get_template_directory_uri') ~ '/assets/images/Twitter.svg'
-                    } %}
-                </a>
-            </li>
-        </ul>
+        {% include 'views/partials/social-links.twig' with {'dark': 1} %}
         <div class="block__text text-small text-ceter">
             <a href="index.php/privacy-policy" target="_self">PRIVACY POLICY</a> | <span>COPYRIGHT 2020 JELLYFISH PICTURES</span>
         </div>
